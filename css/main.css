@@ -1,0 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+main {
+	height: 100vh;
+	overflow: hidden;
+	padding: 16px;
+	background: #7CC0CF url(../images/water.png) no-repeat center;
+	background-size: cover;
+}
+
+.list {
+	position: relative;
+}
+
+.capybara {
+	width: 100px;
+	height: 60px;
+	background: url(../images/cap.png) no-repeat center;
+	background-size: contain;
+	position: absolute;
+	transition: .15s;
+	z-index: 11;
+}
+
+.capybara .name {
+	position: absolute;
+	display: block;
+	padding: 6px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px 1px rgba(0, 0, 0, .15);
+	font-size: 12px;
+	top: 0;
+	left: 100%;
+	width: max-content;
+	font-weight: 600;
+}
+
+.title,
+button {
+	font-family: 'Bungee', sans-serif;
+	text-transform: uppercase;
+}
+
+button {
+	background: #FFCB05;
+	box-shadow: 6px 6px 0 0 #1B449C;
+	color: #1B449C;
+	border: 0;
+	border-radius: 12px;
+	font-size: 28px;
+	cursor: pointer;
+	padding: 14px 28px;
+}
+
+#start {
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+	transform: translate(-50%, -50%);
+}
+
+.finish {
+	position: fixed;
+	top: 0;
+	right: 10%;
+	bottom: 0;
+	width: 60px;
+	background: url(../images/finish.png) repeat-y;
+	background-size: contain;
+}
+
+.countdown {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 40px;
+	background-color: rgba(255, 255, 255, .2);
+	backdrop-filter: blur(10px);
+	z-index: 111;
+	padding: 8px 22px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .2);
+	width: 260px;
+	text-align: center''
+}
+
+.time {
+	font-family: 'Bungee', sans-serif;
+	text-align: center;
+	color: #1B449C;
+}
+
+.modal {
+	position: fixed;
+	z-index: 11111;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .25);
+	border-radius: 28px;
+	background: #fff;
+	padding: 40px;
+	text-align: center;
+	width: 400px;
+	display: none;
+}
+
+.modal h2 {
+	font-family: 'Bungee', sans-serif;
+	color: #2d21c3;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.modal ul {
+	margin-bottom: 28px;
+	list-style: none;
+}
+
+.modal ul li {
+	text-align: left;
+	padding: 12px 22px;
+	font-family: 'Bungee', sans-serif;
+	font-size: 22px;
+	background: #c7d9ff;
+	margin-bottom: 8px;
+	border-radius: 18px;
+}
+
+audio {
+	opacity: 0;
+	visibility: hidden;
+}

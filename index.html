@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Capybara Race</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="app">
+		<main>
+			<div class="list"></div>
+			<div class="finish"></div>
+			<div class="countdown">
+				<span id="time" class="time">00:00:00</span>
+			</div>
+			
+			<div class="modal">
+				<h2>Về đích!!!</h2>
+				<ul></ul>
+				<button><i class="fa-solid fa-rotate-right"></i> Chơi lại</button>
+			</div>
+			
+			<button id="start"><i class="fa-solid fa-play"></i> Bắt đầu!</button>
+			
+			<audio controls>
+				<source src="images/music.mp3" type="audio/mpeg">
+			</audio>
+		</main>
+	</div>
+	
+	<script src="js/data.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
