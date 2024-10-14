@@ -72,7 +72,7 @@ const app = {
 			div.innerHTML = `
 			<span class="name">${students[i].name}</span>
 			`;
-			div.style.cssText = `top: ${i * 24}px;`;
+			div.style.cssText = `top: ${i * 20}px;`;
 			if (students[i].position) div.setAttribute('data-position', students[i].position);
 			template.querySelector('main .list').appendChild(div);
 		}
@@ -134,7 +134,7 @@ const app = {
 			clock.start();
 			setTimeout(() => {
 				this.endRace();
-			}, 11000);
+			}, 12000);
 			
 			setTimeout(() => {
 				template.querySelector('audio').remove();
