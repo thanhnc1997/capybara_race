@@ -95,7 +95,7 @@ const app = {
 				else {
 					racer.style.left = `${random * count}px`;
 				}
-			}, 250);
+			}, 200);
 			
 			setTimeout(() => {+
 				clearInterval(intervalMove);
